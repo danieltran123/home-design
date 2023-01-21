@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    box-shadow: 0 3.5px 3.5px 5px black;
+}
+.navbar {
+    width: 85%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.navbar h1 {
+    font-size: 30px;
+    padding-left: 50px;
+}
+.navbar ul {
+    padding-right: 50px;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    padding-right: 25px;
+    font-size: 20px;
+    position: relative;
+}
+.navbar ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #009688;
+    position: absolute;
+    left: 10px;
+    bottom: -0.15px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {
+    width: 80%;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+.content {
+    width: 100%;
+    height: 100px;
+    margin-top: 8%;
+    text-align: center;
+    position: absolute;
+}
+.content h2 {
+    font-size: 70px;
+    padding: 10.5px;
+}
+.content p {
+    font-size: 25px;
+}
+button {
+    width: 200px;
+    height: 50px;
+    margin: 15px;
+    border: 2.5px solid #009688;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: white;
+}
+button:hover {
+    background: #009688;
+}
+.about-section {
+    text-align: center;
+    padding: 25px;
+}
+.about-section h2 {
+    font-size: 55px;
+}
+.about-section h2 span::after {
+    content: '';
+    width: 25.5%;
+    height: 5px;
+    background: #009688;
+    border-radius: 50px;
+    left: 44%;
+    bottom: -100px;
+    position: absolute;
+}
+.about-section p {
+    font-size: 20.5px;
+    padding: 10px;
+}
+footer {
+    background: #292727;
+    color: white;
+    font-weight: bold;
+    height: 97.5px;
+    font-size: 25px;
+    box-shadow: 0 25px 25px 25px black;
+}
+footer .footer-content {
+    text-align: center;
+    padding-top: 10px;
+}
+.restrict {
+    padding-top: 5px;
+}
